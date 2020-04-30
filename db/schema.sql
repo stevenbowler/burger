@@ -33,6 +33,8 @@ CREATE TABLE burgers (
   id int NOT NULL AUTO_INCREMENT,
   burger_name varchar(255) NOT NULL,
   devoured boolean,
+  createdAt timestamp,
+  updatedAt timestamp,
   PRIMARY KEY (id)
 );
 
@@ -40,4 +42,4 @@ CREATE TABLE burgers (
 -- INSERT INTO movies (movie) VALUES ('get a hug from my wife.');
 -- INSERT INTO movies (movie) VALUES ('get travelling.');
 -- INSERT INTO movies (movie) VALUES ('get a hug from my daughter.');
- SELECT * FROM burgers;
+--  SELECT * FROM burgers; 

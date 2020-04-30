@@ -1,11 +1,16 @@
 # burger
 Restaurant Order App
 
+##### Table of Contents  
+[Overview](#overview)  
+[User Documentation](#user_documentation)  
+[Program Documentation](#program_documentation)  
+
 ### Overview
 This is a restaurant order-tracking app that enables the customer to _*`create`*_ their own order, in this case a burger; _*`read`*_ the status of the order; _*`update`*_ the contents and/or status of the order; and finally, _*`delete`*_ the order - in other words, all of the CRUD operations are represented.   This program was developed by Steven Bowler for the purpose of gaining experience developing a full-stack app employing best-practices for executing the [Model-View-Control](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (MVC) software development pattern.  Additionally, the project provides this programmer the opportunity develop skills in creating and deploying a functional full-stack app on [Heroku](https://www.heroku.com), integrating [Express-Handlebars](https://www.npmjs.com/package/express-handlebars), [ExpressJS](https://www.npmjs.com/package/express), and [MySQL](https://www.npmjs.com/package/mysql). _*`Enjoy`*_.
 
 
-### User Documentation
+### User_Documentation
 
 First, watch this video: _*[burger](https://drive.google.com/file/d/1aaV586emAS9yznHqatfBParYsV_apiiC/view)*_.
 
@@ -22,7 +27,12 @@ To use the app click [burger](https://vast-ridge-32092.herokuapp.com/)
 5. To delete the burger: Under the _*`Devoured`*_ heading: click the _*`Delete Burger`*_ button to the right of the burger to be deleted.
 
 
-### Program Documentation
+### Program_Documentation
+Program requires setup of Heroku Environment variable process.env.JAWSDB_URL from Heroku CLI
+````
+heroku config:set JAWSDB_URL=your_heroku_jawsdb_url
+````
+
 App executes the MVC software pattern in the following manner:
 1. Initiate _*`server.js`*_
 2. Serve _*`index.handlebars`*_ with current burgers table from burgers_db in MySQL/Heroku JawsDB.

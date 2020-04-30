@@ -106,7 +106,6 @@ var orm = {
             cb(result);
         });
     },
-    // 
     /**
      * Updates one table column values based on condition (such as id=2), then callback
      * @memberof module:config/orm~orm
